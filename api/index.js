@@ -35,4 +35,9 @@ const adminjs = new AdminJS(
 const router = buildRouter(adminjs);
 const app = express();
 app.use(adminjs.options.rootPath, router);
+app.get('*', (req, res) => {
+    res.send(`
+    <a href='/admin'><h1>Go to admin page</h1></a>
+    `);
+});
 export default app;
