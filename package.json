@@ -22,10 +22,12 @@
     "type": "module",
     "devDependencies": {
         "@adminjs/bundler": "^3.0.0",
-        "@rollup/rollup-linux-x64-gnu": "^4.12.0",
         "patch-package": "^8.0.0"
     },
     "engines": {
         "node": "20.x"
+    },
+    "overrides": {
+        "rollup": "npm:@rollup/wasm-node"
     }
 }
