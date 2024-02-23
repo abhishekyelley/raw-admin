@@ -21,8 +21,14 @@ import express from "express";
 //             icon: 'Settings',
 //     }
 // }
-
-const staticsURL = new URL("/", process.env.VERCEL_URL || 'http://localhost:3000');
+let staticsURL;
+try{
+    staticsURL = new URL("/", process.env.VERCEL_URL || 'http://localhost:3000');
+}
+catch(e) {
+    console.error(e);
+    staticsURL = 'https://raw-admin-cokt.vercel.app/';
+}
 const adminjs = new AdminJS(
     {
         assetsCDN: staticsURL,
