@@ -22,10 +22,10 @@ import express from "express";
 //     }
 // }
 let staticsURL;
-try{
+try {
     staticsURL = new URL("/", process.env.VERCEL_URL || 'http://localhost:3000');
 }
-catch(e) {
+catch (e) {
     console.error(e);
     staticsURL = 'https://raw-admin-cokt.vercel.app/';
 }
