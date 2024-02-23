@@ -2,4 +2,3 @@ node_modules
 .env
 .adminjs
 .vercel
-package-lock.json
