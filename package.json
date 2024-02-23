@@ -22,7 +22,6 @@
     "type": "module",
     "devDependencies": {
         "@adminjs/bundler": "^3.0.0",
-        "@types/express": "^4.17.21",
         "patch-package": "^8.0.0"
     },
     "engines": {
