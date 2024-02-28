@@ -29,5 +29,8 @@
     },
     "devDependencies": {
         "@types/express": "^4.17.21"
+    },
+    "overrides": {
+        "rollup": "npm:@rollup/wasm-node"
     }
 }
