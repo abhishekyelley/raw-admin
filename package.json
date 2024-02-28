@@ -14,6 +14,7 @@
         "@adminjs/bundler": "^3.0.0",
         "@adminjs/design-system": "^4.0.5",
         "@adminjs/express": "^6.1.0",
+        "@rollup/rollup-linux-x64-gnu": "^4.12.0",
         "adminjs": "^7.6.0",
         "cookie-parser": "^1.4.6",
         "dotenv": "^16.4.5",
