@@ -11,7 +11,8 @@ const componentLoader = new ComponentLoader();
 const DemoPage = componentLoader.add('demoPage', path.resolve(__dirname, "demoPage.jsx"));
 
 let staticsURL;
-staticsURL = process.env.VERCEL_URL ? ("https://" + process.env.NEXT_PUBLIC_VERCEL_URL) : "http://localhost:3000";
+// PUBLIC_URL is added in vercel
+staticsURL = process.env.PUBLIC_URL ? ("https://" + process.env.PUBLIC_URL) : "http://localhost:3000";
 staticsURL = new URL("/", staticsURL).href;  // ./public folder is made static and all files inside will be available at `${baseURL}/`
 
 const adminOptions = {
